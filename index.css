@@ -1,0 +1,327 @@
+    body,
+    html {
+        -webkit-tap-highlight-color: transparent;
+        height: 100%;
+        background: linear-gradient(-45deg, #f1ca89, #f29191, #907fa4, #4aa96c);
+        background-size: 400% 400%;
+        animation: animasiBegron 15s ease infinite;
+        width: 100%;
+        padding: 0;
+        margin: 0;
+        overflow-y: hidden;
+    }
+    
+    .kontener2 {
+        padding: 20px;
+        text-align: center;
+        margin-top: 17%;
+    }
+    
+    .kontener2 h1 {
+        color: #d4ff00;
+    }
+    
+    .kontener2 .tombol {
+        padding: 10px 30px 10px 30px;
+        background: transparent;
+        color: #00b3ff;
+        outline: none;
+        border: 2px solid #BCCFD7;
+        border-radius: 10px;
+        font-weight: bold;
+        font-family: 'Poppins', sans-serif;
+    }
+    
+    .kontener2 .tombol:hover {
+        cursor: pointer;
+        padding: 10px 30px 10px 30px;
+        background: #BCCFD7;
+        color: #f5f5f5;
+        outline: none;
+        border: 2px solid #BCCFD7;
+        border-radius: 10px;
+        font-weight: bold;
+        font-family: 'Poppins', sans-serif;
+    }
+    
+    .kontener {
+        padding: 20px;
+        height: 100%;
+    }
+    
+    .dalemnya_kontener {
+        text-align: center;
+        background: #867ae9;
+        width: 100%;
+        height: 94%;
+        overflow: hidden;
+        position: relative;
+        border-radius: 10px 10px 10px 10px;
+    }
+    
+    .dalemnya_halaman {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        transition: all 0.3s ease;
+    }
+    
+    section .gambar {
+        border-radius: 10px;
+    }
+    
+    section .ucapan {
+        font-weight: bold;
+        font-family: 'Poppins', sans-serif;
+        font-size: 24px;
+        color: #404040;
+    }
+    
+    section .isiucapan {
+        color: #707070;
+        width: 82%;
+        font-weight: 400;
+        font-family: 'Poppins', sans-serif;
+        font-size: 14px;
+    }
+    
+    section.halaman1 {
+        background: #ff96ad;
+        transition: all 0s ease;
+    }
+    
+    .halaman1 .ucapan1 {
+        width: 100%;
+        text-align: center;
+    }
+    
+    .halaman1 .isiucapan1 {
+        display: inline-block;
+        width: 80%;
+        color: #f5f5f5;
+    }
+    
+    section.halaman2 {
+        background: #BCCFD7;
+        transition: all 0.05s ease;
+    }
+    
+    .halaman2 .ucapan2 {
+        width: 100%;
+        text-align: center;
+    }
+    
+    .halaman2 .isiucapan2 {
+        display: inline-block;
+        width: 80%;
+        color: #404040;
+    }
+    
+    section.halaman3 {
+        background: #D3B0AD;
+        transition: all 0.1s ease;
+    }
+    
+    .halaman3 .ucapan3 {
+        width: 100%;
+        text-align: center;
+    }
+    
+    .halaman3 .isiucapan3 {
+        display: inline-block;
+        width: 80%;
+        color: #f5f5f5;
+    }
+    
+    section.halaman4 {
+        background: #f1ca89;
+        transition: all 0.15s ease;
+    }
+    
+    section.after {
+        transition: translateY(100%);
+    }
+    
+    .tombol_menu {
+        position: absolute;
+        z-index: 10;
+        top: 0;
+        left: 0;
+        height: 70px;
+        width: 54px;
+        cursor: pointer;
+        background: url(../gambar/menu.png) no-repeat center;
+        background-size: 44px;
+    }
+    
+    .tombol_menu:active {
+        opacity: 0.2;
+    }
+    
+    .judul_halaman {
+        color: white;
+        font-weight: 500;
+        font-size: 1.5rem;
+        font-family: 'Poppins', sans-serif;
+        text-align: center;
+        margin: 0;
+        line-height: 70px;
+        transition: halaman1;
+    }
+    
+    .page-halaman1 section.buka_menu {
+        transition: all 0s ease;
+    }
+    
+    .page-halaman1 section.buka_menu.page-halaman1 {
+        transition: all 0.15s ease;
+    }
+    
+    .page-halaman1 section.buka_menu.page-halaman2 {
+        transition: all 0.1s ease;
+    }
+    
+    .page-halaman1 section.buka_menu.page-halaman3 {
+        transition: all 0.5s ease;
+    }
+    
+    .page-halaman2 section.buka_menu.page-halaman4 {
+        transition: all 0.5s ease;
+    }
+    
+    .page-halaman2 section.halaman1 {
+        transition: all 0s ease;
+    }
+    
+    .page-halaman2 section.halaman2 {
+        transition: all 0.05s ease;
+    }
+    
+    .page-halaman2 section.halaman3 {
+        transition: all 0.1s ease;
+    }
+    
+    .page-halaman2 section.halaman4 {
+        transition: all 0.05s ease;
+    }
+    
+    .buka_menu section {
+        cursor: pointer;
+    }
+    
+    .buka_menu section.halaman1 {
+        transition: translateY(70px);
+        transition: 0.15s;
+    }
+    
+    .buka_menu section.halaman2 {
+        transition: translateY(140px);
+        transition: 0.1s;
+    }
+    
+    .buka_menu section.halaman3 {
+        transition: translateY(210px);
+        transition: 0.05s;
+    }
+    
+    .buka_menu section.halaman4 {
+        transition: translateY(280px);
+        transition: 0s;
+    }
+    
+    .buka_menu.page-halaman1 section.halaman1 {
+        transition: 0s;
+    }
+    
+    .buka_menu.page-halaman1 section.halaman2 {
+        transition: 0.05s;
+    }
+    
+    .buka_menu.page-halaman1 section.halaman3 {
+        transition: 0.1s;
+    }
+    
+    .buka_menu.page-halaman1 section.halaman4 {
+        transition: translateY(70px);
+        transition: 0.15s;
+    }
+    
+    @keyframes animasiBegron {
+        0% {
+            background-position: 0% 50%;
+        }
+        50% {
+            background-position: 100% 50%;
+        }
+        100% {
+            background-position: 0% 50%;
+        }
+    }
+    
+    @media (min-width: 300px) and (max-width: 640px) {
+        .ml1 {
+            margin-top: 45%;
+        }
+        .kontener2 {
+            padding: 10px;
+            text-align: center;
+            margin-top: 60%;
+        }
+    }
+    
+    .ml1 {
+        margin-top: 10%;
+        color: #404040;
+        font-family: 'Poppins', sans-serif;
+        font-weight: 900;
+        font-size: 1.2em;
+    }
+    
+    .ml1 .letter {
+        display: inline-block;
+        line-height: 1em;
+    }
+    
+    .ml1 .text-wrapper {
+        position: relative;
+        display: inline-block;
+        padding-top: 0.1em;
+        padding-right: 0.05em;
+        padding-bottom: 0.15em;
+    }
+    
+    .ml1 .line {
+        opacity: 0;
+        position: absolute;
+        left: 0;
+        height: 3px;
+        width: 100%;
+        background-color: #404040;
+        transform-origin: 0 0;
+    }
+    
+    .ml1 .line1 {
+        top: 0;
+    }
+    
+    .ml1 .line2 {
+        bottom: 0;
+    }
+    
+    .ml2 {
+        color: #404040;
+        font-family: 'Poppins', sans-serif;
+        font-weight: 900;
+        font-size: 1em;
+    }
+    
+    .ml2 .letter {
+        display: inline-block;
+        line-height: 1em;
+    }
+    
+    .kontener {
+        display: none;
+    }
